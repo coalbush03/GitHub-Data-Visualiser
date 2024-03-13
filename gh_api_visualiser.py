@@ -87,5 +87,6 @@ fig.add_trace(cpp_fig['data'][0],row=2,col=2)
 #layout calego okna
 fig.update_layout(title_text='30 Most popular repositories on GitHub for these 4 languages (based on number of stars)',titlefont={'size':25},showlegend=False,
                   hoverlabel={'bgcolor':'#FFF','font':{'size':15}})
+fig.update_layout(paper_bgcolor="#D9E5D6",plot_bgcolor="#828E82")
 
 offline.plot(fig,filename='languages.html')
